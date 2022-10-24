@@ -5,413 +5,157 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="images/dimensions.png" rel="icon">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,700;1,500&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link href="images/dimensions.png" rel="icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="theme-mode-btn.css">
-
-  <title>HighTech Network & Cloud Provider</title>
+  <title>Agency</title>
 </head>
 
-<body class="dark:bg-darkBlue dark:text-white font-mulish">
+<body class="font-inter bg-mainDark overflow-x-hidden">
+  <div class="absolute bg-head-left w-1/2 md:w-96 h-[428px] bg-no-repeat bg-cover">
+
+    <div class="bg-head-left-bg w-full md:w-96 h-96 bg-no-repeat bg-cover"></div>
+
+    <div
+      class="absolute hidden md:flex items-center justify-center bg-head-left-circle w-1/2 md:w-36 md:h-36 bg-no-repeat top-52">
+      <img src="images/star-left.png" alt=""></div>
+  </div>
+  <div class="header-right-side"></div>
   <!--Header-->
-  <div id="header" class=" z-[9999]">
-    <header
-      class="header container  max-w-6xl md:container mx-auto py-3 md:py-0 md:mt-10 px-6 text-center h-20 md:h-20">
+  <div id="header" class="z-[9999] relative">
+    <header class="header relative container max-w-6xl  mx-auto py-12 md:py-6 px-6 text-center h-20 md:h-16 text-white">
       <nav class="flex items-center justify-between font-bold py-2 mr-2">
-        <a href="/">
-          <div
-            class="bg-logo-light-mode dark:bg-logo-dark-mode bg-contain bg-no-repeat h-12 md:h-16 w-12 md:w-16 mx-0 md:mx-0 top-10 left-10">
-          </div>
+        <a href="">
+          <img src="images/logo.png" alt="" class="w-20 md:w-full" />
         </a>
         <div class="flex justify-between items-center">
-          <div class="hidden h-10 md:flex md:space-x-8 items-center">
-            <div class="group">
-              <a href="/">Home</a>
+          <div class="hidden md:flex md:space-x-8 items-center">
+            <div class="group capitalize">
+              <a href="">about us</a>
+              <div class="link-border"></div>
+            </div>
+            <div class="group capitalize">
+              <a href="">what we do</a>
+              <div class="link-border"></div>
+            </div>
+            <div class="group capitalize">
+              <a href="">our work</a>
+              <div class="link-border"></div>
+            </div>
+            <div class="group capitalize">
+              <a href="">blog</a>
               <div class="link-border"></div>
             </div>
             <div class="group">
-              <a href="#features">Features</a>
-              <div class="link-border"></div>
-            </div>
-            <div class="group">
-              <a href="#howitworks">How it works</a>
-              <div class="link-border"></div>
-            </div>
-            <div class="group">
-              <a href="#pricing">Pricing</a>
-              <div class="link-border"></div>
-            </div>
-            <div class="group">
-              <a href="#contact">Contact</a>
+              <a href="">Say hi</a>
               <div class="link-border"></div>
             </div>
           </div>
-          <div class="flex justify-between items-center md:block w-32">
-            <button class="z-40 block hamburger md:hidden focus-outline-none order-1" id="menu-btn" type="button">
-              <span class="hamburger-top"></span>
-              <span class="hamburger-middle"></span>
-              <span class="hamburger-bottom"></span>
-            </button>
-            <label class="dark-mode-checkbox mb-1"><input type="checkbox" id="theme-toggle"><span
-                class="theme-changer dark:shadow-neon"></span></label>
-          </div>
+        </div>
+        <div class="flex justify-between items-center md:block">
+          <button class="z-40 block hamburger focus-outline-none order-1" id="menu-btn" type="button">
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+          </button>
         </div>
       </nav>
     </header>
   </div>
+  <section id="hero">
+    <div class="container relative mx-auto lg:flex-row py-0 md:py-10 mt-4 md:mt-10 px-4">
+      <div
+        class="absolute flex bg-hero-bg-mobile md:bg-hero-bg-desktop md:right-0 top-16 w-full bg-contain bg-no-repeat h-[432px] md:h-[767px] md:w-[717px]">
+        <img src="images/star-left.png" alt="" class="absolute right-20 -top-8 md:top-0 w-6">
+      </div>
+      <div class="flex flex-col justify-center mx-auto">
+        <div class="flex items-center justify-center">
+          <img src="images/world-class.png" alt="">
+          <h1 class="font-bold text-7xl md:text-[150px] leading-[181px] ml-0 md:ml-10 text-white">Digital</h1>
+        </div>
+        <div class="flex flex-col md:flex-row md:items-center justify-end">
 
-  <div id="menu"
-    class="absolute top-20 bottom-0 left-0 hidden flex-col self-end md:hidden w-full min-h-screen py-1 pt-40 pl-12  text-lg text-white uppercase bg-black z-50">
-    <a href="/">Home</a>
-    <a href="#features">Features</a>
-    <a href="#howitworks">How it works</a>
-    <a href="#pricing">Pricing</a>
-    <a href="#contact">Contact</a>
-  </div>
-
-
-  <!--Hero Section-->
-  <section id="hero" class="bg-curvy-light-mode dark:bg-curvy-dark-mode bg-no-repeat bg-contain bg-bottom">
-    <!--Hero Container-->
-    <div class="container mx-auto px-6 text-center md:pt-0  pb-24 relative">
-      <h1
-        class="text-middle mx-auto mb-10 text-xl hidden md:w-4/5 md:block font-bold leading-normal mt-14 md:text-5xl absolute translate-y--1/2 translate-x-1/2 md:top-[44%] md:right-[50%]">
-        Dos santos importante siempre por favor
-      </h1>
-      <img src="images/servers-in-dc_lock_faded.png" class="mx-auto dark:rounded-bl-[16%] dark:rounded-br-[16%] rounded-full" alt="">
-      <img src="images/earth.webp" class="mx-auto w-[1200px] dark:rounded-lg rounded-[8.5rem] pb-2 mb-8" alt="">
-      <h1 class="max-w-2xl mx-auto mb-10 text-3xl font-bold leading-normal mt-14 md:text-4xl block md:hidden">
-        Dos santos importante siempre por favor
-      </h1>
-      <p class="max-w-sm mx-auto mb-10 text-sm md:max-w-xl md:text-lg">Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Minus magni enim quas harum nobis excepturi fugit eum commodi dolore illo in iusto voluptatem,
-        dolorum assumenda? Modi delectus commodi voluptates similique!
-      </p>
-      <button class="p-3 rounded-full w-52 bg-accentCyan hover:scale-95 duration-200">Get Started</button>
-    </div>
-  </section>
-  <!--Features Section-->
-  <section id="features" class="bg-gray-50 dark:bg-darkBlue1">
-    <!--Features Container-->
-    <div class="container mx-auto px-6  py-32 my-32">
-      <!--First row-->
-      <div class="flex flex-col space-y-24 text-center md:flex-row md:space-y-0">
-        <!--Item 1-->
-        <div class="flex flex-col items-center space-y-2 md:w-1/2">
-          <div class="flex items-center justify-center h-24 mb-6">
-            <img src="images/cloud-computing.svg" alt="">
+          <div class="flex flex-col py-5">
+            <h1 class="font-bold text-7xl md:text-[150px] ml-10 text-white">Agency</h1>
+            <p class="text-lg text-[#E0E5F3] mt-12 w-10/12 py-3"> Full-service design support that growing B2B companies
+              need.
+            </p>
+            <button class="btn-primary">Our
+              Work <img src="images/arrow.svg" alt="" class="ml-4"></button>
           </div>
-          <h3 class="text-xl font-bold">Access your file from anywhere</h3>
-          <p class="max-w-md">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, quo nisi quidem voluptatibus temporibus
-            accusantium ad autem aperiam minus, vel corrupti dolor in quibusdam quas saepe facere, nemo voluptatem
-            vitae.
-          </p>
-        </div>
-        <!--Item 2-->
-        <div class="flex flex-col items-center space-y-2 md:w-1/2">
-          <div class="flex items-center justify-center h-24 mb-6">
-            <img src="images/data-svgrepo-com.svg" alt="">
-          </div>
-          <h3 class="text-xl font-bold">Security you can trust</h3>
-          <p class="max-w-md">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam hic optio nam voluptatum, praesentium amet
-            sequi debitis, quae velit vitae officia dolorem corrupti? Accusantium asperiores tempore expedita odio ea
-            doloribus.
-          </p>
-        </div>
-      </div>
-      <!--Second row-->
-      <div class="flex flex-col space-y-24 mt-28 text-center md:flex-row md:space-y-0">
-        <!--Item 1-->
-        <div class="flex flex-col items-center space-y-2 md:w-1/2">
-          <div class="flex items-center justify-center h-24 mb-6">
-            <img src="images/connected-persons.svg" alt="">
-          </div>
-          <h3 class="text-xl font-bold">Collaborate with teammates</h3>
-          <p class="max-w-md">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, quo nisi quidem voluptatibus temporibus
-            accusantium ad autem aperiam minus, vel corrupti dolor in quibusdam quas saepe facere, nemo voluptatem
-            vitae.
-          </p>
-        </div>
-        <!--Item 2-->
-        <div class="flex flex-col items-center space-y-2 md:w-1/2">
-          <div class="flex items-center justify-center h-24 mb-6">
-            <img src="images/cloud.svg" alt="">
-          </div>
-          <h3 class="text-xl font-bold">Large Cloud System</h3>
-          <p class="max-w-md">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam hic optio nam voluptatum, praesentium amet
-            sequi debitis, quae velit vitae officia dolorem corrupti? Accusantium asperiores tempore expedita odio ea
-            doloribus.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--Productive Section-->
-  <section id="howitworks" class="bg-white dark:bg-darkBlue">
-    <div class="container flex flex-col items-center mx-auto px-6 pt-24 pb-0 md:pb-16 md:flex-row gap-16">
-      <!--Image-->
-      <div class="md:w-1/2">
-        <img class="shadow-imageNeon rounded-md hover:scale-105 duration-200 mb-4 md:mb-0" src="images/data-cent.webp"
-          alt="">
-      </div>
-      <div class="flex flex-col items-start md:w-1/2">
-        <div class="flex flex-col space-y-5">
-          <h4 class="max w-md text-xl font-bold md:text-4xl">
-            Best Communication with Data Servers
-          </h4>
-          <p class="text-md md:text-lg">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga aspernatur ipsam ullam. Nisi excepturi ipsam
-            cupiditate repudiandae fuga maiores sed, iure, dolore pariatur, incidunt quam officia! Recusandae iure odit
-            debitis.
-          </p>
-          <p class="text-md md:text-lg">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate, magnam! Voluptas porro minus eum
-            nostrum itaque architecto animi, praesentium nesciunt nemo exercitationem dolor aliquid, ipsam neque esse!
-            Soluta, eum omnis!
-          </p>
-        </div>
-        <!--Link-->
-        <div class="block mt-4 hover:scale-105 duration-200">
-          <a href="#" class="border-b border-accentCyan text-accentCyan font-bold">
-            See how it Works
-            <img src="images/icon-arrow.svg" alt="" class="inline w-5">
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="container flex flex-col items-center mx-auto px-6 pt-16  md:flex-row gap-16">
-      <!--Image-->
-      <div class="md:w-1/2 order-1 md:order-2">
-        <img class="shadow-imgNeon rounded-md hover:scale-105 duration-200 mb-0 md:mb-4"
-          src="images/header-about-our-data-centers.png" alt="">
-      </div>
-      <div class="flex flex-col items-start md:w-1/2 order-2 md:order-1">
-        <div class="flex flex-col space-y-5">
-          <h4 class="max w-md text-xl font-bold md:text-4xl">
-            Always Focus on Target
-          </h4>
-          <p class="text-md md:text-lg">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga aspernatur ipsam ullam. Nisi excepturi ipsam
-            cupiditate repudiandae fuga maiores sed, iure, dolore pariatur, incidunt quam officia! Recusandae iure
-            odit
-            debitis.
-          </p>
-          <p class="text-md md:text-lg">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate, magnam! Voluptas porro minus eum
-            nostrum itaque architecto animi, praesentium nesciunt nemo exercitationem dolor aliquid, ipsam neque esse!
-            Soluta, eum omnis!
-          </p>
-        </div>
-        <!--Link-->
-        <div class="block mt-4 hover:scale-105 duration-200">
-          <a href="#" class="border-b border-accentCyan text-accentCyan font-bold">
-            See how it Works
-            <img src="images/icon-arrow.svg" alt="" class="inline w-5">
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--Pricing Section-->
-  <section id="pricing" class="bg-gray-50 dark:bg-darkBlue1">
-    <!--Pricing Container-->
-    <div class="container gap-16 mx-auto py-32 my-32">
-      <div class="grid md:grid-cols-3 grid-cols-1 gap-16 md:w-2/3 w-10/12 px-4 mx-auto">
-        <div class="group border-style">
-          <div class="p-8">
-            <h1 class="text-center uppercase font-bold">standard</h1>
-            <h2 class="mt-10 text-5xl text-center">200GB</h2>
-            <h3 class="mt-2 text-center">$20/Month</h3>
-            <button
-              class="w-2/3 border border-accentCyan p-2 mt-4 rounded-lg dark:border-[#dd5594]    hover:border-none dark:group-hover:bg-[#1f1250] group-hover:bg-accentCyan  group-hover:border-none group-hover:tracking-[3px] duration-200">details</button>
-          </div>
-          <div class="border-t border-slate-700 my-4"></div>
-          <div class="p-8 flex flex-col space-y-2 text-center">
-            <div class="flex justify-start">
-              <img src="images/storage-cloud.svg" alt="">
-              <span class="text-sm md:text-md ml-4">200 GB of storage</span>
-            </div>
-            <div class="flex justify-start">
-              <?xml version="1.0" encoding="iso-8859-1"?>
-              <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-              <img src="images/team.svg" alt="" width="24">
-              <span class="text-sm md:text-md ml-4">Option Add Members
-              </span>
-            </div>
-            <div class="flex justify-start">
-              <img src="images/accessibility.svg" alt="">
-              <span class="text-sm md:text-md ml-4">Access Anywhere
-              </span>
-            </div>
-            <div class="flex justify-start">
-              <img src="images/speed.svg" alt="" width="24">
-              <span class="text-sm md:text-md ml-4"> Fast Connection
-              </span>
-            </div>
+          <div class="relative">
+            <img src="images/hero-img-1.png" alt="">
+            <img src="images/play-btn.png" alt="" class="absolute -bottom-10 right-10">
           </div>
         </div>
-        <div class="group border-style dark:bg-divGradient  bg-[#a0f0f269]">
-          <div class="p-8">
-            <h1 class="text-center uppercase font-bold">Premium</h1>
-            <h2 class="mt-10 text-5xl text-center">500GB</h2>
-            <h3 class="mt-2 text-center">$50/Month</h3>
-            <button
-              class="w-2/3 border border-accentCyan p-2 mt-4 rounded-lg dark:border-[#dd5594] dark:bg-[#1f1250] dark:border-none dark:group-hover:bg-[#1f1250] bg-accentCyan   group-hover:tracking-[3px] tracking-[3px] duration-200">details</button>
-          </div>
-          <div class="border-t border-slate-700 my-4"></div>
-          <div class="p-8 flex flex-col space-y-2 text-center">
-            <div class="flex justify-start">
-              <img src="images/storage-cloud.svg" alt="">
-              <span class="text-sm md:text-md ml-4">500 GB of storage</span>
-            </div>
-            <div class="flex justify-start">
-              <?xml version="1.0" encoding="iso-8859-1"?>
-              <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-              <img src="images/team.svg" alt="" width="24">
-              <span class="text-sm md:text-md ml-4">Option Add Members
-              </span>
-            </div>
-            <div class="flex justify-start">
-              <img src="images/accessibility.svg" alt="">
-              <span class="text-sm md:text-md ml-4">Access Anywhere
-              </span>
-            </div>
-            <div class="flex justify-start">
-              <img src="images/speed.svg" alt="" width="24">
-              <span class="text-sm md:text-md ml-4"> Fast Connection
-              </span>
-            </div>
-
-          </div>
-        </div>
-        <div class="group border-style">
-          <div class="p-8">
-            <h1 class="text-center uppercase font-bold">Platinium</h1>
-            <h2 class="mt-10 text-5xl text-center">800GB</h2>
-            <h3 class="mt-2 text-center">$80/Month</h3>
-            <button
-              class="w-2/3 border border-accentCyan p-2 mt-4 rounded-lg dark:border-[#dd5594]   hover:border-none dark:group-hover:bg-[#1f1250] group-hover:bg-accentCyan  group-hover:border-none group-hover:tracking-[3px] duration-200">details</button>
-          </div>
-          <div class="border-t border-slate-700 my-4"></div>
-          <div class="p-8 flex flex-col space-y-2 text-center">
-            <div class="flex justify-start">
-              <img src="images/storage-cloud.svg" alt="">
-              <span class="text-sm md:text-md ml-4">800 GB of storage</span>
-            </div>
-            <div class="flex justify-start">
-              <?xml version="1.0" encoding="iso-8859-1"?>
-              <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-              <img src="images/team.svg" alt="" width="24">
-              <span class="text-sm md:text-md ml-4">Option Add Members
-              </span>
-            </div>
-            <div class="flex justify-start">
-              <img src="images/accessibility.svg" alt="">
-              <span class="text-sm md:text-md ml-4">Access Anywhere
-              </span>
-            </div>
-            <div class="flex justify-start">
-              <img src="images/speed.svg" alt="" width="24">
-              <span class="text-sm md:text-md ml-4"> Fast Connection
-              </span>
-            </div>
-            <div class="flex justify-start">
-              <img src="images/cpu.svg" alt="" width="24" class="my-pulse" width="32">
-              <span class="text-sm md:text-md ml-4 letter-platinium"> Powerful CPU
-              </span>
-            </div>
+        <div class="flex order-last md:order-none mt-10 md:mt-0">
+          <img src="images/hero-img-2.png" alt="">
+          <div class="inline-flex mx-auto">
+            <button class=" text-white flex-col items-center hidden md:flex"><span
+                class="scroll-btn rotate-180 mb-2">Scroll Down</span><img src="images/scroll-icon.svg" alt=""
+                class="mr-0"></button>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <!--Early Access Section-->
-  <section id="contact" class="relative dark:px-6 px-16 bg-darkBlue2 md:px-0">
-    <div
-      class="relative -top-16 max-w-4xl mx-auto p-10 px-6 space-y-6 text-center rounded-lg bg-gray-200 dark:bg-darkBlue1 md:-px-16">
-      <h5 class="text-2xl font-bold">Get EarlyAccess Today</h5>
-      <p class="text-sm">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, repellat? Architecto hic ratione quia id
-        aliquid cumque pariatur illo porro ea iure eligendi dolore, optio cum animi repellendus neque autem?
-      </p>
-      <!-- Input & Button Container-->
-      <div class="flex flex-col items-start space-y-6 md:flex-row md:space-y-0 md:space-x-6">
-        <div class="w-full md:flex-1">
-          <input type="text" class="w-full text-gray-500 px-10 py-3 rounded-full focus:outline-none"
-            placeholder="mail@example.com">
+  <section id="services">
+    <div class="container mx-auto space-y-6 max-w-6xl">
+      <div class="flex-col md:flex-row md:flex mx-auto px-4 space-y-6">
+        <div class="flex flex-col space-y-6 lg:w-1/2">
+          <h2 class="h2-theme">We are a creative
+            digital agency</h2>
+          <p class="text-white text-base leading-8">Dalio started with a vision for building an agency to solve the
+            business problems of the future, and that
+            requires a different model.
+            We’re not a branding agency that dabbles in tech, and we’re not a development shop that leaves you hanging
+            when it’s time
+            to go to market.
+          </p>
+          <p class="text-white text-base leading-8">
+            We start with human experience and layer in technology and
+            marketing to deliver truly integrated digital solutions.
+            This unique set of capabilities sets us apart from other agencies
+            and positions DIG to help you attack your goals.
+          </p>
+          <button class="btn-primary">Contact Us<img src="images/arrow.svg" alt="" class="ml-4"></button>
         </div>
-        <button class="w-full p-3 px-6 rounded-full bg-accentCyan md:w-56 hover:scale-95 duration-200">
-          Get started for free
-        </button>
+        <div class="flex justify-between space-y-6 lg:w-1/2">
+          <div class="flex flex-col justify-between md:items-end relative">
+            <img src="images/service-img-1.png" alt="" class="w-10/12 md:w-auto">
+            <img src="images/service-img-3.png" alt="" class="w-10/12 md:w-auto">
+          </div>
+          <div class="flex flex-col justify-between md:items-start relative">
+            <img src="images/service-img-2.png" alt="" class="mb-6 w-10/12">
+            <img src="images/service-img-4.png" alt="" class="w-10/12 md:w-auto">
+            <img src="images/service-element.png" alt=""
+              class="absolute w-28 md:w-auto md:-right-20 md:-bottom-16 -z-10 right-0 -bottom-10">
+            <img src="images/service-element-2.png" alt="" class="absolute right-40 -top-10 -z-10">
+          </div>
+        </div>
       </div>
+       <div class="flex flex-col md:flex-row items-center justify-between py-24">
+         <div class="fan-fact-group">
+           <h2 class="h2-theme">4.8k</h2>
+           <span class="capitalize">job completed</span>
+         </div>
+          <div class="fan-fact-group">
+            <h2 class="h2-theme">12+</h2>
+            <span class="capitalize">industry experience</span>
+          </div>
+           <div class="fan-fact-group">
+             <h2 class="h2-theme">2.5k+</h2>
+             <span class="capitalize">world wide clients</span>
+           </div>
+            <div class="fan-fact-group">
+              <h2 class="h2-theme">120+</h2>
+              <span class="capitalize">won awards</span>
+            </div>
+       </div>
     </div>
   </section>
-  <!--Footer-->
-  <footer class="bg-darkBlue2 text-white">
-    <div class="container mx-auto px-5 py-10">
-      <!--Flex Container-->
-      <div class="flex flex-col justify-between space-y-24 md:flex-row md:space-y-0">
-        <!--Email & Phone-->
-        <div class="mt-10 space-y-6">
-          <div class="flex items-center space-x-3 md:-mt-10">
-            <div class="w-6">
-              <img src="images/icon-phone.svg" alt="" class="scale-10">
-            </div>
-            <div><a href="tel:+">+01928347465</a></div>
-          </div>
-          <div class="flex items-center space-x-3 md:mt-10">
-            <div class="w-6">
-              <img src="images/icon-email.svg" alt="" class="scale-10">
-            </div>
-            <div><a href="mailto:yns.altintop@gmail.com">yns.altintop@gmail.com</a></div>
-          </div>
-        </div>
-        <!--Menus-->
-        <div class="flex flex-col space-y-10 text-xl md:text-base md:space-x-20 md:space-y-0 md:flex-row">
-          <div class="flex flex-col space-y-3">
-            <a href="/">Home</a>
-            <a href="#features">Features</a>
-            <a href="#howitworks">How it works</a>
-          </div>
-          <div class="flex flex-col space-y-3">
-            <a href="#pricing">Pricing</a>
-            <a href="#contact">Contact</a>
-          </div>
-        </div>
-        <!--social-->
-        <div class="flex justify-center pb-10 space-x-3">
-          <div>
-            <a href="https://www.linkedin.com/in/yunus-altintop/">
-              <img src="images/linkedin.png" alt="" class="p-2">
-            </a>
-          </div>
-          <div>
-            <a href="https://github.com/engineercc">
-              <img src="images/github.png" alt="" class="p-2">
-            </a>
-          </div>
-          <div>
-            <a href="https://open.spotify.com/user/21pfgn6ccik6tc3mptsyoq25q?si=8c1751e53a684f79">
-              <img src="images/spotify.png" alt="" class="p-2">
-            </a>
-          </div>
-          <div>
-            <a href="https://soundcloud.com/yunus-alt-ntop">
-              <img src="images/soundcloud.png" alt="" class="p-2">
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <script src="js/script.js"></script>
 </body>
 
 </html>

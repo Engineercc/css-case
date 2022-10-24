@@ -3,9 +3,15 @@ module.exports = {
   darkMode: "class",
   theme: {
     extend: {
+      screens: {
+        sm: "480px",
+        md: "768px",
+        lg: "1020px",
+        xl: "1440px",
+      },
       colors: {
         // darkBlue: "hsl(217, 28%, 15%)",
-        darkBlue: "#000",
+        mainDark: "#0A142F;",
         darkBlue1: "hsl(218, 28%, 13%)",
         darkBlue2: "hsl(216, 53%, 9%)",
         darkBlue3: "hsl(219, 30%, 18%)",
@@ -14,15 +20,15 @@ module.exports = {
         lightRed: "hsl(0, 100%, 63%)",
       },
       fontFamily: {
-        sans: ["Mulish", "sans-serif"],
-        roboto: ["Roboto", "sans-serif"],
+        inter: ["Inter", "sans-serif"],
       },
       backgroundImage: (theme) => ({
-        "logo-dark-mode": "url('../images/dimensions.png')",
-        "logo-light-mode": "url('../images/dimensions.png')",
-        "divGradient": "linear-gradient(45deg,#FF4040,#441a6f)",
-        // "curvy-dark-mode": "url('../images/bg-curvy-dark-mode.svg')",
-        // "curvy-light-mode": "url('../images/bg-curvy-light-mode.svg')",
+        "head-left": "url('../images/bg-left-1.svg')",
+        "head-left-bg": "url('../images/ellipse.png')",
+        "head-right": "url('../images/header-right-side.png')",
+        "head-left-circle": "url('../images/left-circle.png')",
+        "hero-bg-desktop": "url('../images/hero-bg-vector.png')",
+        "hero-bg-mobile": "url('../images/hero-vector-mobile.png')",
       }),
       boxShadow: {
         neon: "0px 0px 8px 0px #fff",

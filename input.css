@@ -2,29 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-.ficon:hover {
-  filter: invert(80%) sepia(37%) saturate(7048%) hue-rotate(132deg)
-    brightness(105%) contrast(104%);
-}
-
-@layer base {
-  a {
-    @apply hover:text-accentCyan duration-200;
-  }
-
-  body {
-    @apply selection:bg-cyan-800;
-  }
-}
-
 .link-border {
   @apply mx-2 group-hover:border-b group-hover:border-accentCyan;
 }
-
-.border-style {
-  @apply mx-3 mt-3 text-center rounded-tl-[100px] rounded-tr-none rounded-br-[100px] rounded-bl-none border-4 dark:border-[#dd5594] dark:hover:bg-divGradient hover:bg-[#a0f0f269] cursor-pointer border-accentCyan hover:shadow-[0_0_20px_0_#000] dark:hover:shadow-[0_0_20px_0_#fff] duration-200 hover:scale-110 hover:rounded-tr-[100px] hover:rounded-tl-none hover:rounded-bl-[100px] hover:rounded-br-none;
-}
-
 
 .hamburger {
   cursor: pointer;
@@ -44,8 +24,8 @@
   left: 0;
   transform: rotate(0);
   transition: all 0.5s;
-  @apply bg-black;
-  @apply dark:bg-white;
+  @apply bg-white;
+  /* @apply dark:bg-white; */
 }
 
 .hamburger-middle {
@@ -72,58 +52,25 @@
   transform: rotate(-45deg) translateY(6px) translateX(-6px);
 }
 
-.sticky {
-  position: sticky;
-  top: 0;
-  background-color: #000000db;
-  color: #fff;
-  box-shadow: 0px 0px 8px 0px #fff;
+.header-right-side {
+  background: #be229c;
+  filter: blur(250px);
+  transform: matrix(1, 0, 0, -1, 0, 0);
+  @apply absolute top-0 right-0 w-80 h-80
 }
 
-.my-pulse {
-  animation: pulse-cpu 1.5s infinite linear;
+.scroll-btn {
+  writing-mode: tb-rl;
 }
 
-.text-middle {
-      background: -webkit-linear-gradient(#65fbff, #000000);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-transform: capitalize;
+.btn-primary {
+   @apply inline-flex text-lg mr-auto rounded-full text-center bg-[#FFC93E] py-4 px-6 items-center font-bold;
 }
 
-
-.letter-platinium {
-  font-weight: bold;
-  animation: spacing 8s infinite;
-  background-image: linear-gradient(135deg, #65faff77 10%, transparent 0, transparent 50%, #65faff77 0, #65faff77 60%, transparent 0, transparent);
-  background-size: 7.07px 7.07px;
-  padding: 4px;
-  border-radius: 8px;
+.h2-theme {
+  @apply text-5xl text-white font-bold capitalize leading-[58px];
 }
 
-@keyframes pulse-cpu {
-  0% {
-
-    box-shadow: 0 0 0 0 hsl(176, 68%, 64%);
-    border-radius: 50%;
-  }
-
-  70% {
-
-    box-shadow: 0 0 0 10px hsla(176, 68%, 64%, 0);
-    border-radius: 50%;
-  }
-
-  100% {
-
-    box-shadow: 0 0 0 20px hsla(176, 68%, 64%, 0);
-    border-radius: 50%;
-  }
-}
-
-@keyframes spacing {
-  50% {
-    letter-spacing: 4px;
-  }
-  
+.fan-fact-group {
+  @apply flex flex-col justify-center items-center text-white;
 }
