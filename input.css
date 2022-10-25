@@ -64,13 +64,35 @@
 }
 
 .btn-primary {
-   @apply inline-flex text-lg mr-auto rounded-full text-center bg-[#FFC93E] py-4 px-6 items-center font-bold;
+   @apply inline-flex text-lg  rounded-full text-center bg-colorMain py-4 px-6 items-center font-bold;
+}
+
+.btn-secondary {
+     @apply inline-flex text-lg rounded-full text-center text-black bg-colorMain md:bg-inherit md:border md:text-white md:border-white py-4 px-6 items-center font-semibold md:font-bold;
+
 }
 
 .h2-theme {
   @apply text-5xl text-white font-bold capitalize leading-[58px];
 }
 
+.h3-theme {
+  @apply text-3xl text-white font-semibold capitalize leading-9;
+}
+
 .fan-fact-group {
-  @apply flex flex-col justify-center items-center text-white;
+  @apply flex flex-col justify-center items-center text-white py-16;
+}
+
+.solutions-left::before {
+  content: url('/images/solutions-element.png');
+  position: absolute;
+  
+  @apply md:left-[32%] md:bottom-0 left-[1.5rem] bottom-[4.5rem]
+}
+
+.solutions-left::after {
+  content: url('/images/solution-element-2.png');
+  position: absolute;
+  @apply md:-right-[28%] md:top-[4%] right-0 -top-[4.5rem]
 }
