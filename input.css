@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .link-border {
-  @apply mx-2 group-hover:border-b group-hover:border-accentCyan;
+  @apply mx-2 group-hover:border-b-2 group-hover:bg-colorMain;
 }
 
 .hamburger {
@@ -68,7 +68,7 @@
 }
 
 .btn-secondary {
-     @apply inline-flex text-lg rounded-full text-center text-black bg-colorMain md:bg-inherit md:border md:text-white md:border-white py-4 px-6 items-center font-semibold md:font-bold;
+     @apply inline-flex text-base rounded-full text-center text-black bg-colorMain md:bg-inherit md:border md:text-white md:border-white py-4 px-6 items-center font-semibold;
 
 }
 
@@ -78,6 +78,9 @@
 
 .h3-theme {
   @apply text-3xl text-white font-semibold capitalize leading-9;
+}
+.h4-theme {
+  @apply text-2xl text-white font-semibold capitalize leading-9;
 }
 
 .fan-fact-group {
@@ -95,4 +98,8 @@
   content: url('/images/solution-element-2.png');
   position: absolute;
   @apply md:-right-[28%] md:top-[4%] right-0 -top-[4.5rem]
+}
+
+.projects-tab a:hover {
+  @apply text-colorMain
 }
