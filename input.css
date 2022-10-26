@@ -72,6 +72,11 @@
 
 }
 
+.btn-read {
+  @apply inline-flex text-base rounded-full text-center  border text-white border-white py-4 px-6 items-center font-semibold;
+}
+
+
 .h2-theme {
   @apply text-5xl text-white font-bold capitalize leading-[58px];
 }
@@ -80,7 +85,7 @@
   @apply text-3xl text-white font-semibold capitalize leading-9;
 }
 .h4-theme {
-  @apply text-2xl text-white font-semibold capitalize leading-9;
+  @apply text-2xl md:text-lg text-white font-semibold capitalize leading-9;
 }
 
 .fan-fact-group {

@@ -22,6 +22,7 @@ module.exports = {
       },
       fontFamily: {
         inter: ["Inter", "sans-serif"],
+        redRose:["Red Rose","sans-serif"]
       },
       backgroundImage: (theme) => ({
         "head-left": "url('../images/bg-left-1.svg')",
